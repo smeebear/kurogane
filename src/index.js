@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron');
-// const path = require('path');
 require('electron-reload')(__dirname)
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
@@ -55,16 +54,6 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
-
-// ipcMain.on("btnclick",function (event, arg) {
-//   //create new window
-  
-//   mainWindow.loadURL(`file://${__dirname}/hello.html`);
-//   // inform the render process that the assigned task finished. Show a message in html
-//   // event.sender.send in ipcMain will return the reply to renderprocess
-//   event.sender.send("btnclick-task-finished", "yes"); 
-// });
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
